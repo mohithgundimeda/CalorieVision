@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="day.css" rel="stylesheet">
+    <title>Day</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+        <script>
+            fetch('/getProteinData').then(function(response){
+                if(!response.ok){
+                    throw new Error('Didnt get a response from server');
+                }
+                return response.json();
+            }).then(function(data){
+                console.log(data['protein']);
+                console.log(data['labels']);
+            }).catch(function(error){
+                console.error(error);
+            })
+            const ctx = document.getElementById('myChart');
+
+            new Chart(ctx, {
+            type: 'line',
+            data: {
+           labels: ['a','v','s','r','e'],
+           datasets: [{
+           label: '# Protien',
+           data: [20,30,40,50,60],
+           borderWidth: 1
+          }]
+          },
+          options: {
+          scales: {
+          y: {
+             beginAtZero: true
+            }
+          }
+          }
+         });
+        </script>
+    </div>
+</body>
+</html>

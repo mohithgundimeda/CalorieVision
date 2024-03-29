@@ -1,0 +1,120 @@
+body{
+    background-image:url(6091826.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.today-intake{
+    font-family: 'Bebas Neue';
+    
+    position: absolute;
+    text-align: right;
+    left:48%;
+    top:5%;
+    padding-right: 10px;
+    padding-top: 20px;
+    
+}
+.intake{
+    margin-left:25px;
+}
+.container{
+    padding: 20px;
+    position: absolute; 
+    left: 40%;
+    top: 350px;
+    border: 2px ;
+    background-color:rgba(136, 100, 9, 0.67);
+    width: 400px !important;
+    height:200px;
+    border-radius: 20px;
+    font-family:'Bebas Neue';
+   
+}
+ul{
+    text-align: center;
+    list-style-type: none; 
+    padding: 0;
+    margin-right: 10px;
+    
+}
+li{
+    margin-top: 15px;
+    margin-bottom: -20px;
+    margin-left: -10px;
+    margin-bottom: 10px;
+}
+.btn {
+   
+   margin:3px;
+}
+.menubg {
+    border: 1px solid;
+    width: 220px; 
+    height:745px; 
+    overflow-y: auto; 
+    position: absolute;
+    background-color: rgb(228, 185, 120);  
+    border-radius: 0px 60px 60px 0px;
+    left:-150px;
+}
+.fa-arrow-left{
+    margin-top:20px;
+    margin-left: 150px;
+    font-size:3em;
+}
+.fa-arrow-right{
+    margin-top:20px;
+    margin-left: 150px;
+    font-size:3em;
+}
+.grid-container{
+    position:absolute;
+    top:150px;
+    left:10px;
+}
+.row{
+    margin-bottom: 2em;
+    font-family:'Bebas Neue' ;
+    font-size:  25px;
+    
+}
+.row a:hover{
+    font-size: 30px;
+}
+#diet{
+    text-decoration: none;
+    color:rgb(255, 255, 255) !important;
+}
+#week{
+    text-decoration: none;
+    color:rgb(255, 255, 255) !important;
+}
+#month{
+    text-decoration: none;
+    color:rgb(255, 255, 255) !important;
+}
+#video{
+    position:absolute;
+    right:20px;
+}
+.dbutton{
+    position:relative;
+    margin-top:300px;
+    margin-left: 1250px;
+    
+}
+.quantity{
+    position:absolute;
+    left:38%;
+    top: 25%;
+    font-size:medium;
+}
+#add-button{
+    position:relative;
+    color:rgba(0, 0, 0, 0.551);
+    top:40px;
+    right:50px;
+}
